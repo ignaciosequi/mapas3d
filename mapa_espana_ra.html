@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de España en Realidad Aumentada</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin-top: 50px; }
+    model-viewer { width: 100%; height: 80vh; }
+  </style>
+</head>
+<body>
+  <h1>Mapa de España con Relieve (RA)</h1>
+  <model-viewer 
+    src="spain_relief_sample.glb" 
+    ar 
+    ar-modes="scene-viewer webxr quick-look" 
+    auto-rotate 
+    camera-controls 
+    alt="Mapa de España con relieve">
+  </model-viewer>
+  <p>Haz clic en el modelo para verlo en realidad aumentada desde tu móvil.</p>
+</body>
+</html>
